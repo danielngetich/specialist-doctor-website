@@ -1,0 +1,18 @@
+*{
+    /* background-color:grey */
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    background-color: #00806B;
+    padding: 30px;
+    justify-content: space-between;
+    color: white;
+}
+.logo{
+    margin-right:100px;
+}
+.login{
+    margin-right: 50px;
+}
