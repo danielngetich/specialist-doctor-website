@@ -26,3 +26,12 @@ nav{
     align-items: center;
     color: white;
 }
+#doc1{
+    height: 100vh;
+    width: 50vw;
+    float: right;
+}
+.about{
+    padding: 70px;
+    font-size: 26px;
+}
