@@ -1,5 +1,5 @@
 *{
-    background-color:#E5E5E5;
+    /* background-color:#E5E5E5; */
     padding: 0;
     margin: 0;
 }
@@ -8,6 +8,7 @@ nav{
     background-color: rgb(41, 83, 119);
     padding: 30px;
     justify-content: space-between;
+    color: white;
 }
 .logo{
     margin-right:100px;
@@ -64,4 +65,9 @@ nav{
 form{
     height: 400px;
     text-align: center;
+    padding: 50px;
+}
+#imgn{
+    height: 350px;
+    width: 317px;
 }
