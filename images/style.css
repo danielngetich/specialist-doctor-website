@@ -16,3 +16,13 @@ nav{
 .login{
     margin-right: 50px;
 }
+.signup{
+    display: flex;
+    border: solid block;
+    background-color: #00806B;
+    height: 100px;
+    width: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
