@@ -9,7 +9,6 @@ nav{
     padding: 30px;
     justify-content: space-between;
     color: white;
-    position: absolute;
 }
 .logo{
     margin-right:100px;
@@ -35,4 +34,7 @@ nav{
 .about{
     padding: 70px;
     font-size: 26px;
+}
+.sect1,.sect2,.sect3{
+    display: flex;
 }
