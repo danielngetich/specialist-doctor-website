@@ -19,7 +19,10 @@ nav{
     margin-right:100px;
 }
 .login{
-    margin-right: 50px;
+    margin-right: 80px;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
 }
 .signup{
     display: flex;
@@ -57,6 +60,14 @@ nav{
 .fa-solid{
     color: #1F2B6C;
     font-size: 80px;
+}
+.solid{
+    border: solid #BFD2F8;
+    box-shadow: 5px 5px grey;
+    border-radius: 5px;
+    height: 150px;
+    width: 140px;
+    align-content: center;
 }
 #special{
     text-align: center;
