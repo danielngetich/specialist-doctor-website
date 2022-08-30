@@ -44,11 +44,7 @@
                 </div>
                 <div>
                  <i class="fa-solid fa-circle-h"></i>
-                 <h4>Obstetricians and Gynecologists</h4>
-                </div>
-                <div>
-                 <i class="fa-solid fa-circle-h"></i>
-                 <h4>Oncologists</h4>
+                 <h4>Gynecologists</h4>
                 </div>
             </div>
             <div class="sect2">
@@ -59,24 +55,16 @@
                 <div>
                  <i class="fa-solid fa-circle-h"></i>
                  <h4>Pathologists</h4>
-                </div>
+                </div>        
                 <div>
                  <i class="fa-solid fa-circle-h"></i>
-                 <h4>Internists</h4>
-                </div>         
-                <div>
-                 <i class="fa-solid fa-circle-h"></i>
-                 <h4>Infectious <br>Disease Specialists</h4>
+                 <h4>Dermatologists</h4>
                 </div>
             </div>
             <div class="sect3">
                 <div>
                  <i class="fa-solid fa-circle-h"></i>
                  <h4>Hematologists</h4>
-                </div>
-                <div>
-                 <i class="fa-solid fa-circle-h"></i>
-                 <h4>Gastroenterologists</h4>
                 </div>
                 <div>
                  <i class="fa-solid fa-circle-h"></i>
@@ -90,80 +78,106 @@
         </div>
     </div>
     <div>
-        <form action="">
-            <h2>Doctors Registration form</h2>
-            <div>
-                <label for="">Full Names</label>
-                <input type="text" placeholder="Full Names">
+        <div class="container">
+            <div class="title">Doctors Registration form</div>
+            <div class="content">
+              <form action="#">
+                <div class="user-details">
+                  <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Category</span>
+                    <select name="Category" id="category">
+                        <option value="Neph">Nephrologists</option>
+                        <option value="Neuro">Neurologists</option>
+                        <option value="Obst">Obstetricians and Gynecologists</option>
+                        <option value="Onco">Oncologists</option>
+                        <option value="Opht">Ophthalmologists</option>
+                        <option value="Patho">Pathologists</option>
+                        <option value="Inter">Inter</option>
+                        <option value="Infect">Infectious Disease Specialists</option>
+                        <option value="Hema">Hematologists</option>
+                        <option value="gastro">Gastroenterologists</option>
+                        <option value="Endo">Endocrinologists</option>
+                      </select>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Registration no</span>
+                    <input type="text" placeholder="Enter Registration" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" placeholder="Enter your number" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Appointment charges</span>
+                    <input type="text" placeholder="Enter charges per appointment" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Location</span>
+                    <input type="text" placeholder="Where are you located" required>
+                  </div>
+                  <div>
+                    <label for="file">Upload your image</label>
+                    <input type="file" id="file" accept="image/*">
+                </div>
+                </div>
+                <div class="gender-details">
+                  <input type="radio" name="gender" id="dot-1">
+                  <input type="radio" name="gender" id="dot-2">
+                  <input type="radio" name="gender" id="dot-3">
+                  <span class="gender-title">Gender</span>
+                  <div class="category">
+                    <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="gender">Male</span>
+                  </label>
+                  <label for="dot-2">
+                    <span class="dot two"></span>
+                    <span class="gender">Female</span>
+                  </label>
+                  <label for="dot-3">
+                    <span class="dot three"></span>
+                    <span class="gender">Prefer not to say</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="button">
+                  <input type="submit" value="Register">
+                </div>
+              </form>
             </div>
-            <div>
-              <label for="">Category</label>
-              <select name="Category" id="category">
-                <option value="Neph">Nephrologists</option>
-                <option value="Neuro">Neurologists</option>
-                <option value="Obst">Obstetricians and Gynecologists</option>
-                <option value="Onco">Oncologists</option>
-                <option value="Opht">Ophthalmologists</option>
-                <option value="Patho">Pathologists</option>
-                <option value="Inter">Inter</option>
-                <option value="Infect">Infectious Disease Specialists</option>
-                <option value="Hema">Hematologists</option>
-                <option value="gastro">Gastroenterologists</option>
-                <option value="Endo">Endocrinologists</option>
-              </select>
-            </div>
-            <div>
-             <label for="">Registration no</label>
-            <input type="text" placeholder="Registration no">
-            </div>
-             <div>
-            <label for="">Appointment charges</label>
-            <input type="text" placeholder="appointment charges">
-             </div>
-             <div>
-            <label for="">Location</label>
-            <input type="text" placeholder="location">
-            </div>
-             <div>
-             <label for="">Telephone number</label>
-            <input type="number" placeholder="Telephone number">
-            </div>
-            <div>
-                <label for="file">Upload your image</label>
-                <input type="file" id="file" accept="image/*">
-            </div>
-            <div>
-                <input type="Submit">
-            </div>
-        </form>
     </div>
     <div>
-        <h2>Registered Doctors</h2>
+        <h2 id="reg-doc">Registered Doctors</h2>
         <div class="register">
-        <div>
+        <div class="do1">
             <img id="imgn" src="./images/img/usman-yousaf-pTrhfmj2jDA-unsplash.jpg" alt="">
-            <h4>Doctors name</h4>
-            <h4>Neurology</h4>
-            <p>View profile</p>
+            <div class="detail">
+                <h4>Doctors</h4>
+                <h4>Neurologistse</h4>
+                <p>View profile</p>
+                </div>
         </div>
-        <div>
+        <div class="do2">
             <img id="imgn" src="./images/img/rian-ramirez-rm7rZYdl3rY-unsplash.jpg" alt="">
-            <h4>Doctors name</h4>
-            <h4>Cardiologists</h4>
-            <p>View profile</p>
+            <div class="detail">
+                <h4>Doctors name</h4>
+                <h4>Pathologists</h4>
+                <p>View profile</p>
+                </div>
         </div>
-        <div>
+        <div class="do3">
             <img id="imgn" src="./images/img/ashkan-forouzani-DPEPYPBZpB8-unsplash.jpg" alt="">
+            <div class="detail">
             <h4>Doctors name</h4>
             <h4>Oncologists</h4>
             <p>View profile</p>
+            </div>
         </div>
         </div>
-    </div>
-    <div>
-        <footer>
-
-        </footer>
     </div>
     <script src="/images/index.js"></script>
 </body>
