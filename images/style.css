@@ -50,8 +50,8 @@ nav{
 .sect1,.sect2,.sect3{
     display: flex;
     justify-content: space-around;
-    margin: 20px;
-    padding: 60px;
+    margin: 10px;
+    padding: 30px;
 }
 .fa-solid{
     color: #1F2B6C;
@@ -67,39 +67,22 @@ nav{
     margin: 30px;
     box-shadow: 5px 5px grey;
 }
+#reg-doc{
+    text-align: center;
+    margin: 40px;
+}
 #imgn{
     height: 350px;
     width: 317px;
     display: flex;
+    border-radius: 15%;
 }
-/* .do1{
+.register{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 50px;
-    position: absolute;
-    left: 0%;
+    justify-content: space-around;
+    padding: 30px;
+    margin-bottom: 40px;
 }
-.do2{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 40px;
-position: absolute;
-left: 33.97%;
-right: 34.07%;
-}
-.do3{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 40px;
-position: absolute;
-left: 68.04%;
-}
-#reg-doc{
-    text-align: center;
-} */
 .container{
     max-width: 700px;
     width: 100%;
@@ -277,6 +260,7 @@ left: 68.04%;
   footer .content .middle a{
     line-height: 32px;
   }
+
   footer .content .right input[type="text"]{
     height: 45px;
     width: 100%;
@@ -323,7 +307,7 @@ left: 68.04%;
   }
   footer .bottom{
     width: 100%;
-    text-align: right;
+    text-align: center;
     color: #d9d9d9;
     padding: 0 40px 5px 0;
   }
