@@ -30,7 +30,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     color: white;
-    margin: 20px;
+    margin: 30px;
+    border-radius: 20px;
 }
 #doc1{
     height: 100vh;
