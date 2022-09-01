@@ -6,9 +6,19 @@
       "registrationNo": "2030",
       "phoneNO": "0720591954",
       "location": "NAIROBI",
-      "categry": "Pathologists",
-      "image": "C:\\fakepath\\usman-yousaf-pTrhfmj2jDA-unsplash.jpg",
+      "categry": "Hematologists",
+      "image": "C:\\fakepath\\national-cancer-institute-KrsoedfRAf4-unsplash.jpg",
       "id": 1
+    },
+    {
+      "fullname": "Irene",
+      "appmtCost": "ksh 1000",
+      "registrationNo": "323",
+      "phoneNO": "07373",
+      "location": "Nakuru",
+      "categry": "Nephrologists",
+      "image": "C:\\fakepath\\Rectangle 8.png",
+      "id": 2
     }
   ]
 }

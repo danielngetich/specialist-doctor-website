@@ -41,14 +41,20 @@ function appendData(){
     fetch("http://localhost:3000/Doctors")
     .then(response=>response.json())
     .then((data)=>{
-        data.map(()=>{
-            document.getElementById("imgn").src=data.image
-            document.getElementById("docName").innerHTML=data.fullname
-            document.getElementById("categr").innerHTML=data.categry
+        data.map((dat)=>{
+           let register= document.querySelector(".Docregister")
+           let img=document.createElement("img")
+           const reader=new FileReader();
+
+           register.appendChild(img).innerHTML=img.setAttribute("src",dat.image)
+           let h4=document.createElement("h4")
+           register.appendChild(h4).innerHTML=dat.fullname
+           let h5=document.createElement("h5")
+           register.appendChild(h5).innerHTML=dat.categry
         })
     })
 }
-
+appendData()
 function deleteServer(id){
     fetch(`http://localhost:3000/Doctors/${id}`,{
         method:"DELETE",
@@ -62,6 +68,5 @@ function deleteServer(id){
 document.addEventListener("DOMContentLoaded",(e)=>{
     e.preventDefault();
 dataCollection();
-appendData();
-// deleteServer(id);
+// deleteServer();
 })
