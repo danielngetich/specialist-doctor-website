@@ -41,13 +41,27 @@ function appendData(){
     fetch("http://localhost:3000/Doctors")
     .then(response=>response.json())
     .then((data)=>{
-        console.log(data)
+        data.map(()=>{
+            document.getElementById("imgn").src=data.image
+            document.getElementById("docName").innerHTML=data.fullname
+            document.getElementById("categr").innerHTML=data.categry
+        })
     })
 }
 
+function deleteServer(id){
+    fetch(`http://localhost:3000/Doctors/${id}`,{
+        method:"DELETE",
+        headers:{
+            "content-type":"application/json"
+        },
+    }).then(response=>response.json())
+    .then((data)=>console.log(data))
+}
 
 document.addEventListener("DOMContentLoaded",(e)=>{
     e.preventDefault();
 dataCollection();
 appendData();
+// deleteServer(id);
 })
