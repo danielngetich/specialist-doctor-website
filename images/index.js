@@ -8,11 +8,11 @@ class formData{
     }
 }
 
-const fulname=document.getElementById("fulnm").value
-const regNo=document.getElementById("regno").value
-const phnNo=document.getElementById("phno").value
-const appnt=document.getElementById("appnmt").value
-const loction=document.getElementById("loctn").value
+const fulname=document.getElementById("fulnm").value;
+const regNo=document.getElementById("regno").value;
+const phnNo=document.getElementById("phno").value;
+const appnt=document.getElementById("appnmt").value;
+const loction=document.getElementById("loctn").value;
 
 
 const collectedData=new formData(fulname,appnt,regNo,phnNo,loction)
@@ -31,6 +31,7 @@ const collectedData=new formData(fulname,appnt,regNo,phnNo,loction)
         console.log(data)
     })
 })}
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded",(e)=>{
+    e.preventDefault();
 dataCollection();
 })
