@@ -1,4 +1,4 @@
-class formData{
+class FormData{
     constructor(fullname,appmtCost,registrationNo,phoneNO,location){
         this.fullname=fullname;
         this.appmtCost=appmtCost;
@@ -7,18 +7,16 @@ class formData{
         this.location=location;
     }
 }
-
-const fulname=document.getElementById("fulnm").value;
-const regNo=document.getElementById("regno").value;
-const phnNo=document.getElementById("phno").value;
-const appnt=document.getElementById("appnmt").value;
-const loction=document.getElementById("loctn").value;
-
-
-const collectedData=new formData(fulname,appnt,regNo,phnNo,loction)
  function dataCollection(){
     document.getElementById("form").addEventListener("submit",(e)=>{
     e.preventDefault();
+    let fulname=document.getElementById("fulnm").value;
+    let regNo=document.getElementById("regno").value
+    let phnNo=document.getElementById("phno").value
+    let appnt=document.getElementById("appnmt").value
+    let loction=document.getElementById("loctn").value
+    const collectedData=new FormData(fulname,appnt,regNo,phnNo,loction)
+
     fetch("http://localhost:3000/Doctors",{
         method:"POST",
         headers:{

@@ -90,6 +90,14 @@
       "phoneNO": "",
       "location": "",
       "id": 15
+    },
+    {
+      "fullname": "ngetich",
+      "appmtCost": "599",
+      "registrationNo": "35",
+      "phoneNO": "07373",
+      "location": "nai",
+      "id": 16
     }
   ]
 }
