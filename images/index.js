@@ -1,5 +1,5 @@
 class FormData{
-    constructor(fullname,appmtCost,registrationNo,phoneNO,location,categry,image){
+    constructor(fullname,appmtCost,registrationNo,phoneNO,location,categry,image,gent){
         this.fullname=fullname;
         this.appmtCost=appmtCost;
         this.registrationNo=registrationNo;
@@ -7,6 +7,7 @@ class FormData{
         this.location=location;
         this.categry=categry;
         this.image=image;
+        this.gent=gent;
     }
 }
  function dataCollection(){
@@ -19,8 +20,9 @@ class FormData{
     let loction=document.getElementById("loctn").value
     let category=document.getElementById("category").value
     let image=document.getElementById("file").value
+    let gender=document.getElementsByName("input[name='gender']").value;
 
-    const collectedData=new FormData(fulname,appnt,regNo,phnNo,loction,category,image)
+    const collectedData=new FormData(fulname,appnt,regNo,phnNo,loction,category,image,gender)
 
     fetch("http://localhost:3000/Doctors",{
         method:"POST",
@@ -34,7 +36,18 @@ class FormData{
         console.log(data)
     })
 })}
+
+function appendData(){
+    fetch("http://localhost:3000/Doctors")
+    .then(response=>response.json())
+    .then((data)=>{
+        console.log(data)
+    })
+}
+
+
 document.addEventListener("DOMContentLoaded",(e)=>{
     e.preventDefault();
 dataCollection();
+appendData();
 })

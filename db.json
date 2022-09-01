@@ -136,6 +136,16 @@
       "categry": "Hematologists",
       "image": "C:\\fakepath\\image 5.png",
       "id": 20
+    },
+    {
+      "fullname": "ngetich",
+      "appmtCost": "599",
+      "registrationNo": "35",
+      "phoneNO": "07373",
+      "location": "nai",
+      "categry": "Nephrologists",
+      "image": "C:\\fakepath\\image 2 (1).png",
+      "id": 21
     }
   ]
 }
