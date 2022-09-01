@@ -98,6 +98,44 @@
       "phoneNO": "07373",
       "location": "nai",
       "id": 16
+    },
+    {
+      "fullname": "ngetich",
+      "appmtCost": "599",
+      "registrationNo": "35",
+      "phoneNO": "07373",
+      "location": "nai",
+      "categry": "Onco",
+      "id": 17
+    },
+    {
+      "fullname": "ngetich",
+      "appmtCost": "599",
+      "registrationNo": "35",
+      "phoneNO": "07373",
+      "location": "nai",
+      "categry": "Ophthalmologists",
+      "id": 18
+    },
+    {
+      "fullname": "ngetich",
+      "appmtCost": "599",
+      "registrationNo": "35",
+      "phoneNO": "07373",
+      "location": "nai",
+      "categry": "Nephrologists",
+      "gender": "on",
+      "id": 19
+    },
+    {
+      "fullname": "ngetich",
+      "appmtCost": "599",
+      "registrationNo": "35",
+      "phoneNO": "07373",
+      "location": "nai",
+      "categry": "Hematologists",
+      "image": "C:\\fakepath\\image 5.png",
+      "id": 20
     }
   ]
 }

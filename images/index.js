@@ -1,10 +1,12 @@
 class FormData{
-    constructor(fullname,appmtCost,registrationNo,phoneNO,location){
+    constructor(fullname,appmtCost,registrationNo,phoneNO,location,categry,image){
         this.fullname=fullname;
         this.appmtCost=appmtCost;
         this.registrationNo=registrationNo;
         this.phoneNO=phoneNO;
         this.location=location;
+        this.categry=categry;
+        this.image=image;
     }
 }
  function dataCollection(){
@@ -15,7 +17,10 @@ class FormData{
     let phnNo=document.getElementById("phno").value
     let appnt=document.getElementById("appnmt").value
     let loction=document.getElementById("loctn").value
-    const collectedData=new FormData(fulname,appnt,regNo,phnNo,loction)
+    let category=document.getElementById("category").value
+    let image=document.getElementById("file").value
+
+    const collectedData=new FormData(fulname,appnt,regNo,phnNo,loction,category,image)
 
     fetch("http://localhost:3000/Doctors",{
         method:"POST",
