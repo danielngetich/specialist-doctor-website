@@ -1,14 +1,21 @@
 class formData{
-    constructor(fullname,category,registrationNo,phoneNO,location){
+    constructor(fullname,appmtCost,registrationNo,phoneNO,location){
         this.fullname=fullname;
-        this.category=category;
+        this.appmtCost=appmtCost;
         this.registrationNo=registrationNo;
         this.phoneNO=phoneNO;
         this.location=location;
     }
 }
 
-const collectedData=new formData(this)
+const fulname=document.getElementById("fulnm").value
+const regNo=document.getElementById("regno").value
+const phnNo=document.getElementById("phno").value
+const appnt=document.getElementById("appnmt").value
+const loction=document.getElementById("loctn").value
+
+
+const collectedData=new formData(fulname,appnt,regNo,phnNo,loction)
  function dataCollection(){
     document.getElementById("form").addEventListener("submit",(e)=>{
     e.preventDefault();
