@@ -36,6 +36,26 @@
       "categry": "Hematologists",
       "image": "C:\\fakepath\\Rectangle 11-2.png",
       "id": 4
+    },
+    {
+      "fullname": "Edward Samwel",
+      "appmtCost": "ksh 3000",
+      "registrationNo": "med/34/2009/Kenya",
+      "phoneNO": "+25472365478",
+      "location": "NAIROBI",
+      "categry": "Neurologists",
+      "image": "C:\\fakepath\\Rectangle 11-1.png",
+      "id": 5
+    },
+    {
+      "fullname": "Rose Jevan",
+      "appmtCost": "us$23",
+      "registrationNo": "med/54/2012/Britain",
+      "phoneNO": "+2364576546234",
+      "location": "UK",
+      "categry": "Nephrologists",
+      "image": "C:\\fakepath\\Rectangle 6.png",
+      "id": 6
     }
   ]
 }

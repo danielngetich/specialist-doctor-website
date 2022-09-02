@@ -211,6 +211,7 @@ nav{
       margin: 15px;
       color: #d9d9d9;
       margin-bottom: 40px;
+      margin-left: 40%;
     }
     #view{
       padding: 8px;
@@ -218,6 +219,15 @@ nav{
       color: #d9d9d9;
       background-color: #1F2B6C;
       width: 250px;
+    }
+    .Docregister{
+      background-color: rgb(150, 157, 147);
+      width: 50%;
+      margin-left: 25%;
+      border-radius: 15px;
+      padding: 50px;
+      margin-bottom: 50px;
+      
     }
    @media(max-width: 584px){
    .container{
