@@ -78,10 +78,10 @@ document.addEventListener("DOMContentLoaded",(e)=>{
 dataCollection();
 // deleteServer();
 })
-var uploadedImage= document.getElementById("inputFile").addEventListener("change",function(){
-    const reader=new FileReader();
-    reader.addEventListener("load",()=>{
-        uploadedImage= reader.result;
-    })
-    reader.readAsDataURL(this.files[0])
-})
+// var uploadedImage= document.getElementById("inputFile").addEventListener("change",function(){
+//     const reader=new FileReader();
+//     reader.addEventListener("load",()=>{
+//         uploadedImage= reader.result;
+//     })
+//     reader.readAsDataURL(this.files[0])
+// })
