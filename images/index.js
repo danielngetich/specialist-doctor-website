@@ -49,14 +49,18 @@ function appendData(){
     .then((data)=>{
         data.map((dat)=>{
            let register= document.querySelector(".Docregister")
-           let h3=document.createElement("h4")
-           register.appendChild(h3).innerHTML=dat.fullname
-           let p=document.createElement("p")
-           register.appendChild(p).innerHTML=dat.categry
+           let h2=document.createElement("h2")
+           register.appendChild(h2).innerHTML=dat.fullname
+           let h3=document.createElement("h3")
+           register.appendChild(h3).innerHTML=`Specialised in : ${dat.categry}`
            let li=document.createElement("li")
-           register.appendChild(li).innerHTML=`Appointment cost ${dat.appmtCost}`
+           register.appendChild(li).innerHTML=`Appointment cost : ${dat.appmtCost}`
            let l=document.createElement("li")
-           register.appendChild(l).innerHTML=`Board Certification no ${dat.registrationNo}`
+           register.appendChild(l).innerHTML=`Board Certification no : ${dat.registrationNo}`
+           let m=document.createElement("li")
+           register.appendChild(m).innerHTML=`Location : ${dat.location}`
+           let n=document.createElement("li")
+           register.appendChild(n).innerHTML=`Telephone no : ${dat.phoneNO}`
         })
     })
 }

@@ -8,6 +8,15 @@
       "location": "Nakuru",
       "categry": "Nephrologists",
       "id": 1
+    },
+    {
+      "fullname": "Judith Musa",
+      "appmtCost": "US$ 20",
+      "registrationNo": "Med/345/1995/USA",
+      "phoneNO": "+1537486534",
+      "location": "Washingthon",
+      "categry": "Gastroenterologists",
+      "id": 2
     }
   ]
 }
