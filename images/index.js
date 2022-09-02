@@ -10,6 +10,7 @@ class FormData{
         this.gent=gent;
     }
 }
+
  function dataCollection(){
     document.getElementById("form").addEventListener("submit",(e)=>{
     e.preventDefault();
@@ -19,10 +20,15 @@ class FormData{
     let appnt=document.getElementById("appnmt").value
     let loction=document.getElementById("loctn").value
     let category=document.getElementById("category").value
-    let image=document.getElementById("file").value
     let gender=document.getElementsByName("input[name='gender']").value;
-
-    const collectedData=new FormData(fulname,appnt,regNo,phnNo,loction,category,image,gender)
+    var uploadedImage= document.getElementById("inputFile").addEventListener("change",function(){
+        const reader=new FileReader();
+        reader.addEventListener("load",()=>{
+            return reader.result;
+        })
+        reader.readAsDataURL(this.files[0])
+    })
+    const collectedData=new FormData(fulname,appnt,regNo,phnNo,loction,category,uploadedImage,gender)
 
     fetch("http://localhost:3000/Doctors",{
         method:"POST",
@@ -35,26 +41,27 @@ class FormData{
     }).then((data)=>{
         console.log(data)
     })
-})}
-
+}
+)};
 function appendData(){
     fetch("http://localhost:3000/Doctors")
     .then(response=>response.json())
     .then((data)=>{
         data.map((dat)=>{
            let register= document.querySelector(".Docregister")
-           let img=document.createElement("img")
-           const reader=new FileReader();
-
-           register.appendChild(img).innerHTML=img.setAttribute("src",dat.image)
-           let h4=document.createElement("h4")
-           register.appendChild(h4).innerHTML=dat.fullname
-           let h5=document.createElement("h5")
-           register.appendChild(h5).innerHTML=dat.categry
+           let h3=document.createElement("h4")
+           register.appendChild(h3).innerHTML=dat.fullname
+           let p=document.createElement("p")
+           register.appendChild(p).innerHTML=dat.categry
+           let li=document.createElement("li")
+           register.appendChild(li).innerHTML=`Appointment cost ${dat.appmtCost}`
+           let l=document.createElement("li")
+           register.appendChild(l).innerHTML=`Board Certification no ${dat.registrationNo}`
         })
     })
 }
 appendData()
+
 function deleteServer(id){
     fetch(`http://localhost:3000/Doctors/${id}`,{
         method:"DELETE",

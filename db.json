@@ -3,22 +3,11 @@
     {
       "fullname": "Ngetich Kimutai Daniel",
       "appmtCost": "KSH 2000",
-      "registrationNo": "2030",
-      "phoneNO": "0720591954",
-      "location": "NAIROBI",
-      "categry": "Hematologists",
-      "image": "C:\\fakepath\\national-cancer-institute-KrsoedfRAf4-unsplash.jpg",
-      "id": 1
-    },
-    {
-      "fullname": "Irene",
-      "appmtCost": "ksh 1000",
       "registrationNo": "323",
-      "phoneNO": "07373",
+      "phoneNO": "0720591954",
       "location": "Nakuru",
       "categry": "Nephrologists",
-      "image": "C:\\fakepath\\Rectangle 8.png",
-      "id": 2
+      "id": 1
     }
   ]
 }
