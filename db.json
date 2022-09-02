@@ -17,6 +17,25 @@
       "location": "Washingthon",
       "categry": "Gastroenterologists",
       "id": 2
+    },
+    {
+      "fullname": "Michael Owen",
+      "appmtCost": "us$15",
+      "registrationNo": "med/756/2003/japan",
+      "phoneNO": "+2164836743",
+      "location": "Japan",
+      "categry": "Infectious Disease Specialists",
+      "id": 3
+    },
+    {
+      "fullname": "Melody Kirui",
+      "appmtCost": "ksh 900",
+      "registrationNo": "med/867/2015/kenya",
+      "phoneNO": "+254738363535",
+      "location": "Bomet",
+      "categry": "Hematologists",
+      "image": "C:\\fakepath\\Rectangle 11-2.png",
+      "id": 4
     }
   ]
 }

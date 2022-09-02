@@ -21,14 +21,8 @@ class FormData{
     let loction=document.getElementById("loctn").value
     let category=document.getElementById("category").value
     let gender=document.getElementsByName("input[name='gender']").value;
-    var uploadedImage= document.getElementById("inputFile").addEventListener("change",function(){
-        const reader=new FileReader();
-        reader.addEventListener("load",()=>{
-            return reader.result;
-        })
-        reader.readAsDataURL(this.files[0])
-    })
-    const collectedData=new FormData(fulname,appnt,regNo,phnNo,loction,category,uploadedImage,gender)
+    let image=document.getElementById("inputFile").value
+    const collectedData=new FormData(fulname,appnt,regNo,phnNo,loction,category,image,gender)
 
     fetch("http://localhost:3000/Doctors",{
         method:"POST",
@@ -64,7 +58,10 @@ function appendData(){
         })
     })
 }
-appendData()
+
+document.getElementById("display").addEventListener("click",()=>{
+    appendData()
+})
 
 function deleteServer(id){
     fetch(`http://localhost:3000/Doctors/${id}`,{
@@ -80,4 +77,11 @@ document.addEventListener("DOMContentLoaded",(e)=>{
     e.preventDefault();
 dataCollection();
 // deleteServer();
+})
+var uploadedImage= document.getElementById("inputFile").addEventListener("change",function(){
+    const reader=new FileReader();
+    reader.addEventListener("load",()=>{
+        uploadedImage= reader.result;
+    })
+    reader.readAsDataURL(this.files[0])
 })
