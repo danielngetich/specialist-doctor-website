@@ -24,7 +24,7 @@ class FormData{
     let image=document.getElementById("inputFile").value
     const collectedData=new FormData(fulname,appnt,regNo,phnNo,loction,category,image,gender)
 
-    fetch("http://localhost:3000/Doctors",{
+    fetch("https://doctors-serverapi.herokuapp.com/doctors",{
         method:"POST",
         headers:{
             "content-type":"application/json"
@@ -38,7 +38,7 @@ class FormData{
 }
 )};
 function appendData(){
-    fetch("http://localhost:3000/Doctors")
+    fetch("https://doctors-serverapi.herokuapp.com/doctors")
     .then(response=>response.json())
     .then((data)=>{
         data.map((dat)=>{
@@ -64,7 +64,7 @@ document.getElementById("display").addEventListener("click",()=>{
 })
 
 function deleteServer(id){
-    fetch(`http://localhost:3000/Doctors/${id}`,{
+    fetch(`https://doctors-serverapi.herokuapp.com/doctors${id}`,{
         method:"DELETE",
         headers:{
             "content-type":"application/json"
