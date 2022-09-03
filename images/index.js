@@ -64,7 +64,7 @@ document.getElementById("display").addEventListener("click",()=>{
 })
 
 function deleteServer(id){
-    fetch(`https://doctors-serverapi.herokuapp.com/doctors${id}`,{
+    fetch(`https://doctors-serverapi.herokuapp.com/doctors/${id}`,{
         method:"DELETE",
         headers:{
             "content-type":"application/json"
